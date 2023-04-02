@@ -1,0 +1,118 @@
+/* Set overall font size and color */
+body {
+  font-size: 16px;
+  background-color: #0D2436;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Center the main title */
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Set the category title font size, color, and margin */
+.category h2 {
+  font-size: 24px;
+  color: #ffffff;
+  margin: 1rem ;
+}
+.nominees{
+  display: flex;
+  margin: 0.5rem;
+
+}
+
+/* Set the nominee card style */
+.nominee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Set the nominee card image size and margin */
+.nominee img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.nominee_name{
+  color: #ffffff;
+}
+.nominee_name:hover{
+  color: #CCCCCC;
+}
+
+/* Set the selected nominee card style */
+.nominee.selected {
+  background-color: #34AC9C;
+  border-color: #009B86;
+  box-shadow: 0 0 8px #009B86;
+}
+
+/* Set the submit button style */
+.submit-btn {
+  display: block;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #009B86;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+button {
+  background-color: #009B86; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #34AC9C;
+}
+
+button:active {
+  background-color: #34AC9C;
+}
+
+
+/* Set the submit button hover style */
+.submit-btn:hover {
+  background-color: #34AC9C;
+}
+
+/* Set the category and nominee card layout for small screens */
+@media (max-width: 768px) {
+  .category {
+    margin: 2rem 0;
+  }
+  
+  .nominees {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nominee {
+    margin: 1rem;
+  }
+}

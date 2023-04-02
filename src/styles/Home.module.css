@@ -1,0 +1,73 @@
+
+
+/* Set the category title font size, color, and margin */
+.category h2 {
+  font-size: 24px;
+  color: #555;
+  margin: 1rem 0;
+}
+
+/* Set the nominee card style */
+.nominee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Set the nominee card image size and margin */
+.nominee img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Set the selected nominee card style */
+.nominee.selected {
+  background-color: #fff3cd;
+  border-color: #ffc107;
+  box-shadow: 0 0 8px #ffc107;
+}
+
+/* Set the submit button style */
+.submit-btn {
+  display: block;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Set the submit button hover style */
+.submit-btn:hover {
+  background-color: #0062cc;
+}
+
+/* Set the category and nominee card layout for small screens */
+@media (max-width: 768px) {
+  .category {
+    margin: 2rem 0;
+  }
+  
+  .nominees {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nominee {
+    margin: 1rem;
+  }
+}
